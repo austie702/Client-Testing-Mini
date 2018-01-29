@@ -6,6 +6,12 @@ const callBackInvoker = cb => {
   return cb();
 };
 
+const each = (array,cb) => {
+  for (let i = 0; i <= array.length; i++) {
+    cb(array[i]);
+  }
+}
+
 const iterator = (num, cb) => {
   for (let i = 1; i <= num; i++) {
     cb();
